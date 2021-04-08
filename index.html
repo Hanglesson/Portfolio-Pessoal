@@ -32,28 +32,29 @@
 
     <!-- MENÚ DE NAVEGAÇÃO INÍCIO -->
     <nav class="nav-menu">
-      <div class="close-nave-menu outer-shadow hover-in-shadow">&times;</div>
+      <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#" class="inner-shadow active">home</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">sobre</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">serviços</a></li>
+          <li><a href="#home" class="link-item inner-shadow active">home</a></li>
+          <li><a href="#sobre" class="link-item outer-shadow hover-in-shadow">sobre</a></li>
+          <li><a href="#servicos" class="link-item outer-shadow hover-in-shadow">serviços</a></li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">portfolio</a>
+            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a>
           </li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">testemunhos</a>
+            <a href="#testemunhos" class="link-item outer-shadow hover-in-shadow">testemunhos</a>
           </li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">contato</a></li>
+          <li><a href="#contato" class="link-item outer-shadow hover-in-shadow">contato</a></li>
         </ul>
       </div>
       <!-- texto copyright  -->
       <p class="copyright-text">&copy; 2021 Hanglesson Fontineles</p>
     </nav>
+    <div class="fade-out-effect"></div>
     <!-- MENÚ DE NAVEGAÇÃO FINAL -->
 
     <!-- SEÇÃO HOME INÍCIO -->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
       <!-- Efeitos Inicio -->
       <div class="effect-wrap">
         <div class="effect effect-1"></div>
@@ -109,7 +110,7 @@
             <p>Olá</p>
             <h2>Eu sou Hanglesson</h2>
             <h1>Designer & Desenvolverdor</h1>
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow"
+            <a href="#sobre" class="link-item btn-1 outer-shadow hover-in-shadow"
               >Mais Sobre Mim</a
             >
           </div>
@@ -128,7 +129,7 @@
     <!-- SEÇÃO HOME FINAL -->
 
     <!-- SEÇÃO SOBRE INÍCIO -->
-    <section class="about-section section">
+    <section class="about-section section" id="sobre">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -173,7 +174,7 @@
             <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow"
               >Baixar CV</a
             >
-            <a href="#" class="btn-1 outer-shadow hover-in-shadow"
+            <a href="#contato" class="link-item btn-1 outer-shadow hover-in-shadow"
               >Contrate-me</a
             >
           </div>
@@ -388,7 +389,7 @@
     <!-- SEÇÃO SOBRE FINAL -->
 
     <!-- SEÇÃO SERVIÇOS INICIO -->
-    <section class="service-section section">
+    <section class="service-section section" id="servicos">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -486,7 +487,7 @@
     <!-- SEÇÃO SERVIÇOS FINAL -->
 
     <!-- SEÇÃO PORTFOLIO INÍCIO -->
-    <section class="portfolio-section section">
+    <section class="portfolio-section section" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -840,7 +841,7 @@
     <!-- SEÇÃO PORTFOLIO INÍCIO -->
 
     <!-- SEÇÃO TESTEMUNHOS INÍCIO -->
-    <section class="testimonial-section section">
+    <section class="testimonial-section section" id="testemunhos">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -904,9 +905,7 @@
     <!-- SEÇÃO TESTEMUNHOS FINAL -->
 
     <!-- SEÇÃO CONTATO INÍCIO -->
-
-    <!-- SEÇÃO CONTATO FINAL -->
-    <section class="contact-section section">
+    <section class="contact-section section" id="contato">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -948,24 +947,44 @@
               <div class="row">
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" class="input-control" placeholder="Nome">
+                    <input
+                      type="text"
+                      class="input-control"
+                      placeholder="Nome"
+                    />
                   </div>
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" class="input-control" placeholder="Email">
+                    <input
+                      type="text"
+                      class="input-control"
+                      placeholder="Email"
+                    />
                   </div>
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" class="input-control" placeholder="Assunto">
+                    <input
+                      type="text"
+                      class="input-control"
+                      placeholder="Assunto"
+                    />
                   </div>
                 </div>
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <textarea class="input-control" placeholder="Mensagem"></textarea>
+                    <textarea
+                      class="input-control"
+                      placeholder="Mensagem"
+                    ></textarea>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="submit-btn">
-                  <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Enviar Mensagem</button>
+                  <button
+                    type="submit"
+                    class="btn-1 outer-shadow hover-in-shadow"
+                  >
+                    Enviar Mensagem
+                  </button>
                 </div>
               </div>
             </form>
@@ -973,6 +992,8 @@
         </div>
       </div>
     </section>
+    <!-- SEÇÃO CONTATO FINAL -->
+
     <!-- POPUP PORTFOLIO INÍCIO -->
     <div class="pp portfolio-popup">
       <div class="pp-details">
@@ -1033,7 +1054,7 @@
         <div class="pp-next"><i class="fas fa-play"></i></div>
       </div>
     </div>
-    <!-- POPUP PORTFOLIO FINAL -->   
+    <!-- POPUP PORTFOLIO FINAL -->
 
     <!-- Main JS -->
     <script src="js/main.js "></script>
