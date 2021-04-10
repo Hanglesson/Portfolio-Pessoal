@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,11 +10,23 @@
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
     <!-- main css -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- css responsivo -->
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css" />
     <!-- esquema de cores padrão -->
-    <link rel="stylesheet" type="text/css" href="css/skins/color-1.css" />
+    <link rel="stylesheet" type="text/css" href="css/skins/color-4.css" />
   </head>
 
   <body>
+    <!-- PRÉCARREGAMENTO INICÍO -->
+    <div class="preloader">
+      <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- PRÉCARREGAMENTO FINAL -->
+
     <!-- cabeçalho início -->
     <header class="header">
       <div class="container">
@@ -35,16 +47,36 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#home" class="link-item inner-shadow active">home</a></li>
-          <li><a href="#sobre" class="link-item outer-shadow hover-in-shadow">sobre</a></li>
-          <li><a href="#servicos" class="link-item outer-shadow hover-in-shadow">serviços</a></li>
           <li>
-            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow">portfolio</a>
+            <a href="#home" class="link-item inner-shadow active">home</a>
           </li>
           <li>
-            <a href="#testemunhos" class="link-item outer-shadow hover-in-shadow">testemunhos</a>
+            <a href="#sobre" class="link-item outer-shadow hover-in-shadow"
+              >sobre</a
+            >
           </li>
-          <li><a href="#contato" class="link-item outer-shadow hover-in-shadow">contato</a></li>
+          <li>
+            <a href="#servicos" class="link-item outer-shadow hover-in-shadow"
+              >serviços</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow"
+              >portfolio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#testemunhos"
+              class="link-item outer-shadow hover-in-shadow"
+              >testemunhos</a
+            >
+          </li>
+          <li>
+            <a href="#contato" class="link-item outer-shadow hover-in-shadow"
+              >contato</a
+            >
+          </li>
         </ul>
       </div>
       <!-- texto copyright  -->
@@ -110,7 +142,9 @@
             <p>Olá</p>
             <h2>Eu sou Hanglesson</h2>
             <h1>Designer & Desenvolverdor</h1>
-            <a href="#sobre" class="link-item btn-1 outer-shadow hover-in-shadow"
+            <a
+              href="#sobre"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
               >Mais Sobre Mim</a
             >
           </div>
@@ -156,8 +190,6 @@
               <a href="#" class="outer-shadow hover-in-shadow"
                 ><i class="fab fa-instagram"></i
               ></a>
-              <!-- <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="outer-shadow hover-in-shadow"><i class="fab fa-behance"></i></a> -->
             </div>
             <!-- Social links Final -->
           </div>
@@ -174,7 +206,9 @@
             <a href="cv.pdf" class="btn-1 outer-shadow hover-in-shadow"
               >Baixar CV</a
             >
-            <a href="#contato" class="link-item btn-1 outer-shadow hover-in-shadow"
+            <a
+              href="#contato"
+              class="link-item btn-1 outer-shadow hover-in-shadow"
               >Contrate-me</a
             >
           </div>
@@ -199,8 +233,8 @@
               <div class="skill-item">
                 <p>Html5</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(40% - 14px)">
-                    <span>40%</span>
+                  <div class="progress-bar" style="width: calc(60% - 14px)">
+                    <span>60%</span>
                   </div>
                 </div>
               </div>
@@ -209,8 +243,8 @@
               <div class="skill-item">
                 <p>JavaScript</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(20% - 14px)">
-                    <span>20%</span>
+                  <div class="progress-bar" style="width: calc(40% - 14px)">
+                    <span>40%</span>
                   </div>
                 </div>
               </div>
@@ -219,8 +253,8 @@
               <div class="skill-item">
                 <p>CSS3</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(45% - 14px)">
-                    <span>45%</span>
+                  <div class="progress-bar" style="width: calc(50% - 14px)">
+                    <span>50%</span>
                   </div>
                 </div>
               </div>
@@ -229,8 +263,8 @@
               <div class="skill-item">
                 <p>Python</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(60% - 14px)">
-                    <span>60%</span>
+                  <div class="progress-bar" style="width: calc(70% - 14px)">
+                    <span>70%</span>
                   </div>
                 </div>
               </div>
@@ -259,18 +293,8 @@
               <div class="skill-item">
                 <p>Bubble</p>
                 <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(60% - 14px)">
-                    <span>60%</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Habilidade item final -->
-              <!-- Habilidade item inicio -->
-              <div class="skill-item">
-                <p>bootstrap</p>
-                <div class="progress inner-shadow">
-                  <div class="progress-bar" style="width: calc(10% - 14px)">
-                    <span>10%</span>
+                  <div class="progress-bar" style="width: calc(45% - 14px)">
+                    <span>45%</span>
                   </div>
                 </div>
               </div>

@@ -17,10 +17,26 @@ global Style
   --text-black-700: #555;
   --text-black-600: #666;
   --text-black-300: #bbb;
-  --outer-shadow: 3px 3px #d0d0d0, -3px -3px #f8f8f8;
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
-  --inner-shadow: inset 3px 3px #d0d0d0, inset -3px -3px #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
   --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
+}
+
+/* --------------- cores do modo dark -------------*/
+body.dark {
+  --bg-black-900: #fff;
+  --bg-black-100: #353535;
+  --bg-black-50: #2b2c2f;
+  --bg-opacity: rgba(43, 44, 47, 0.5);
+  --text-black-900: #fff;
+  --text-black-700: #fff;
+  --text-black-600: #bbb;
+  --text-black-300: #bbb;
+  --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
+  --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
+  --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
 }
 
 body {
@@ -279,6 +295,52 @@ img {
   display: none;
 }
 /*---------------
+PRELOADER
+---------------*/
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1500;
+  background-color: var(--bg-black-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader .fade-out{
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.preloader .box {
+  width: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.preloader .box div {
+  height: 15px;
+  width: 15px;
+  background-color: var(--skin-color);
+  border-radius: 50%;
+  animation: loaderAni 1s ease infinite;
+}
+.preloader .box div:nth-child(2){
+  animation-delay: 0.1s;
+}
+.preloader .box div:nth-child(3){
+  animation-delay: 0.2s;
+}
+@keyframes loaderAni{
+  0%, 100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+}
+/*---------------
 HEAD 
 ---------------*/
 
@@ -441,7 +503,7 @@ MENU DE NAVEGAÇÃO
   display: inline-block;
   font-size: 28px;
   font-weight: 600;
-  color: var(--text-black-700);
+  color: var(--text-black-600);
   padding: 5px 30px;
   text-transform: capitalize;
   border-radius: 30px;
@@ -501,7 +563,7 @@ SEÇÃO HOME
 .home-section .home-text h1 {
   font-size: 20px;
   font-weight: 500;
-  color: var(--text-black-700);
+  color: var(--text-black-600);
   margin: 0;
   text-transform: capitalize;
 }
@@ -835,6 +897,7 @@ SEÇÃO SERVIÇOS
   display: block;
   margin: 0 auto 30px;
   position: relative;
+  color: var(--text-black-600);
 }
 
 .service-section .service-item-inner .icon :after {

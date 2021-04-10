@@ -353,3 +353,11 @@ function bodyScrollkingToggle() {
     }
   });
 })();
+
+window.addEventListener("load", () => {
+  // Préloader
+  document.querySelector(".preloader").classList.add("fade-out")
+  setTimeout(() => {
+    document.querySelector(".preloader").style.display="none"
+  },600)
+})
